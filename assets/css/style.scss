@@ -12,21 +12,6 @@ $text-gray: rgb(49, 49, 49);
   font-family: 'Abril Fatface', cursive;
 }
 
-.site-title{
-  font-size: 2rem;
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-  .site-title, .site-header:visited, .site-nav .page-link {
-    &:hover, & {
-      color: white;
-      mix-blend-mode: difference;
-    }
-  }
-
 .banner {
   height: 100vh;
   width: 100%;
@@ -104,7 +89,7 @@ body.post {
     margin-bottom: 0;
     overflow: hidden;
     img {
-      filter: blur(0px);
+      filter: brightness(200%);
     }
     a {
       position: absolute;
@@ -117,7 +102,7 @@ body.post {
       bottom: 0;
       left: 0;
       right: 0;
-      opacity: 0;
+      opacity: 1;
       padding: 1rem;
       text-decoration: none;
 
@@ -134,17 +119,6 @@ body.post {
         margin-bottom: calc(100vw * 0.025);
       }
     }
-    &:hover {
-      img {
-        filter: blur(10px);
-        transition: filter .5s ease-out;
-      }
-      a {
-        text-decoration: none;
-        opacity: 1;
-        transition: opacity .5s ease-out;
-      }
-    }
   }
 }
 
@@ -156,6 +130,45 @@ body.post {
   }
 }
 
+.page.about {
+  background-color: #005945;
+  color: white;
+
+  .page-content a {
+    color: white;
+    text-decoration: underline;
+  }
+  .u-email, .p-name {
+    color: white;
+  }
+}
+
+.site-title{
+  font-size: 2rem;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  .page.about &{
+    text-decoration: none;
+  }
+}
+
+.site-title, .site-header:visited, .site-nav .page-link {
+  &:hover, & {
+    color: white;
+    mix-blend-mode: difference;
+
+    .page.about & {
+      color: white;
+      mix-blend-mode: normal;
+    }
+  }
+}
+
+
+
+
 @media screen and (min-width: 767px) {
   .site-title {
     font-size: 3rem;
@@ -164,5 +177,24 @@ body.post {
   .post-list {
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    li {
+      img {
+        filter: blur(0px);
+      }
+      a {
+        opacity: 0;
+      }
+      &:hover {
+        img {
+          filter: blur(10px);
+          transition: filter .75s ease-out;
+        }
+        a {
+          text-decoration: none;
+          opacity: 1;
+          transition: opacity .75s ease-out;
+        }
+      }
+    }
   }
 }
