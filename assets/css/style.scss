@@ -2,7 +2,8 @@
 ---
 
 @import "{{ site.theme }}";
-$text-gray: rgb(49, 49, 49);
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;500;700;900&display=swap');
+$text-gray: #808080;
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -30,22 +31,28 @@ body.home, body.post {
 
 
 body.post {
+  color: $text-gray;
   .post-header {
     margin-bottom: calc(100vw * 0.05);
+
+    .post-title {
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
   }
   .page-content {
     .wrapper {
-      width: 50%;
-      padding-left: calc(100vw * 0.2);
-      padding-right: calc(100vw * 0.2);
+      width: 70%;
+      padding-left: calc(100vw * 0.1);
+      padding-right: calc(100vw * 0.1);
     }
   }
   .post-content {
     p img {
       max-width: 100vw;
       width: 100vw;
-      margin-left: calc(100vw * -0.25);
-      margin-right: calc(100vw * -0.25);
+      margin-left: calc(100vw * -0.15);
+      margin-right: calc(100vw * -0.15);
       &:not(:first-child) {
         margin-top: calc(100vw * 0.0125);
       }
@@ -217,6 +224,22 @@ body.post {
           opacity: 1;
           transition: opacity .75s ease-out;
         }
+      }
+    }
+  }
+
+  body.post {
+    .page-content {
+      .wrapper {
+        width: 50%;
+        padding-left: calc(100vw * 0.2);
+        padding-right: calc(100vw * 0.2);
+      }
+    }
+    .post-content {
+      p img {
+        margin-left: calc(100vw * -0.25);
+        margin-right: calc(100vw * -0.25);
       }
     }
   }
