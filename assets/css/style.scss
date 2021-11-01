@@ -89,9 +89,10 @@ body.post {
     margin-bottom: 0;
     overflow: hidden;
     img {
-      filter: brightness(200%);
+
     }
     a {
+      color: black;
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -103,20 +104,29 @@ body.post {
       left: 0;
       right: 0;
       opacity: 1;
-      padding: 1rem;
+      padding: 0;
       text-decoration: none;
 
-      h1, .post-meta {
-        width: 50%;
-        margin-left: calc(100vw * 0.025);
-      }
-      h1 {
-        font-weight: 900;
-        font-size: 2rem;
-        margin-bottom: 0rem;
-      }
-      .post-meta {
-        margin-bottom: calc(100vw * 0.025);
+      div {
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+
+        h1, .post-meta {
+          width: 33%;
+          padding-left: calc(100vw * 0.025);
+        }
+
+        h1 {
+          font-weight: 900;
+          font-size: 1.5rem;
+          margin-bottom: 0rem;
+        }
+        .post-meta {
+          font-size: 0.75rem;
+          padding-bottom: calc(100vw * 0.025);
+        }
       }
     }
   }
@@ -167,7 +177,17 @@ body.post {
 }
 
 
-
+@media screen and (max-width: 600px) {
+  .site-nav {
+    top: 24px;
+    background-color: transparent;
+    border: 0px;
+  }
+  .site-title {
+    position: absolute;
+    top: 9px;
+  }
+}
 
 @media screen and (min-width: 767px) {
   .site-title {
@@ -183,6 +203,9 @@ body.post {
       }
       a {
         opacity: 0;
+        div {
+          background-color: transparent;
+        }
       }
       &:hover {
         img {

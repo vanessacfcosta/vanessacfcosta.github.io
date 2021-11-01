@@ -24,10 +24,10 @@ layout: default
       <li>
         <img src="{{ post.thumbnail | relative_url }}" />
         <a class="post-link" href="{{ post.url | relative_url }}">
-          <h1>
-            {{ post.title | escape }}
-          </h1>
-          <span class="post-meta">{{ post.categories | array_to_sentence_string }}</span>
+          <div>
+            <h1>{{ post.title | escape }}</h1>
+            <span class="post-meta">{{ post.categories | array_to_sentence_string }}</span>
+          </div>
         </a>
       </li>
       {%- endfor -%}
