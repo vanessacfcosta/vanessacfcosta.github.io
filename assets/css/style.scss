@@ -169,37 +169,58 @@ body.post {
 }
 
 .page {
-  &.about {
-    background-color: $emerald;
-    color: white;
+  .page-content {
+    padding-top: calc(100vw * 0.1);
 
-    .page-content {
-      padding-top: calc(100vw * 0.1);
-      a {
-        color: white;
-        text-decoration: underline;
+    .wrapper {
+      width: 70%;
+      padding-left: calc(100vw * 0.1);
+      padding-right: calc(100vw * 0.1);
+    }
+
+    a {
+      color: white;
+      mix-blend-mode: difference;
+      text-decoration: underline;
+    }
+
+    p img {
+      max-width: 100vw;
+      width: 100vw;
+      margin-left: calc(100vw * -0.15);
+      margin-right: calc(100vw * -0.15);
+      &:not(:first-child) {
+        margin-top: calc(100vw * 0.0125);
+      }
+      &:not(:last-child) {
+        margin-bottom: calc(100vw * 0.0125);
       }
     }
+  }
+
+  &.about {
+    background-color: $emerald;
+    color: invert($emerald);
+
     .u-email, .p-name {
       color: white;
+      mix-blend-mode: difference;
     }
 
     .go-top a {
       color: white;
+      mix-blend-mode: difference;
     }
   }
   &.lets-talk {
     @extend .about;
     background-color: $blueish;
+    color: invert($blueish);
   }
   &.random {
+    @extend .about;
     background-color: $yellowish;
-    .page-content {
-      padding-top: calc(100vw * 0.1);
-      a {
-        text-decoration: underline;
-      }
-    }
+    color: invert($yellowish);
   }
 }
 
@@ -255,6 +276,7 @@ body.post {
       justify-content: flex-start;
       .page-link {
         font-size: 2rem;
+        font-weight: 500;
       }
       transition: top .5s ease-in;
     }
@@ -271,9 +293,6 @@ body.post {
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      .page-link {
-        font-size: 2rem;
-      }
       transition: top .5s ease-out;
     }
   }
@@ -346,6 +365,11 @@ body.post {
     .post-content {
       padding-left: calc(100vw * 0.2);
       padding-right: calc(100vw * 0.2);
+
+      p img {
+        margin-left: calc(100vw * -0.25);
+        margin-right: calc(100vw * -0.25);
+      }
     }
   }
 }
