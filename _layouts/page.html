@@ -2,6 +2,9 @@
 layout: default
 ---
 <article class="post">
+  {%- if page.cover -%}
+    <img src="{{page.cover | relative_url}}" />
+  {%- endif -%}
   <div class="post-content">
     {{ content }}
   </div>

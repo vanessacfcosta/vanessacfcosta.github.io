@@ -4,6 +4,7 @@
 @import "{{ site.theme }}";
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;500;700;900&display=swap');
 $text-gray: #808080;
+$emerald: #005945;
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -36,7 +37,7 @@ body.post {
     margin-bottom: calc(100vw * 0.05);
 
     .post-title {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       font-weight: 500;
     }
   }
@@ -148,7 +149,7 @@ body.post {
 }
 
 .page.about {
-  background-color: #005945;
+  background-color: $emerald;
   color: white;
 
   .page-content a {
@@ -189,12 +190,56 @@ body.post {
     top: 24px;
     background-color: transparent;
     border: 0px;
+
+    label[for="nav-trigger"] {
+      position: absolute;
+      right: 0px;
+      z-index: 2;
+    }
+    input ~ .trigger {
+      position: absolute;
+      padding-top: 7rem;
+      top: calc(-24px - 100vh);
+      right: -15px;
+      width: calc(100vw);
+      height: calc(100vh - 7rem);
+      background-color: black;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      .page-link {
+        font-size: 2rem;
+      }
+      transition: top .5s ease-in;
+    }
+    input:checked ~ .trigger {
+      position: absolute;
+      padding-top: 7rem;
+      top: -24px;
+      right: -15px;
+      width: calc(100vw);
+      height: calc(100vh - 7rem);
+      background-color: black;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      .page-link {
+        font-size: 2rem;
+      }
+      transition: top .5s ease-out;
+    }
   }
   .site-title {
     position: absolute;
     top: 9px;
   }
 }
+
+
 
 @media screen and (min-width: 767px) {
   .site-title {
