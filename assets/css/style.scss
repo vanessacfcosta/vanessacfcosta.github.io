@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;500;700;900&display=swap');
 $text-gray: #808080;
 $emerald: #005945;
+$blueish: #16315B;
+$yellowish: #FFB200;
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -20,6 +22,34 @@ $emerald: #005945;
   background-image: url("{{site.banner | relative_url }}");
   background-size: cover;
   background-position: center;
+}
+
+.site-header {
+  border-bottom: 0;
+  border-top: 0;
+  padding-top: 2rem;
+}
+
+.site-title{
+  font-size: 2rem;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  .page & {
+    text-decoration: none;
+  }
+}
+
+.site-title, .site-title:visited, .site-header:visited, .site-nav .page-link {
+  &:hover, & {
+    color: white;
+    mix-blend-mode: difference;
+
+    .page.about & {
+      color: white;
+    }
+  }
 }
 
 body.home, body.post {
@@ -65,13 +95,6 @@ body.post {
       margin-bottom: calc(100vw * 0.05);
     }
   }
-}
-
-
-.site-header {
-  border-bottom: 0;
-  border-top: 0;
-  padding-top: 2rem;
 }
 
 .page-content {
@@ -145,50 +168,66 @@ body.post {
   }
 }
 
+.page {
+  &.about {
+    background-color: $emerald;
+    color: white;
+
+    .page-content {
+      padding-top: calc(100vw * 0.1);
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+    .u-email, .p-name {
+      color: white;
+    }
+
+    .go-top a {
+      color: white;
+    }
+  }
+  &.lets-talk {
+    @extend .about;
+    background-color: $blueish;
+  }
+  &.random {
+    background-color: $yellowish;
+    .page-content {
+      padding-top: calc(100vw * 0.1);
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .site-footer {
   border-top: 0px;
 
   .u-email, .p-name {
     color: $text-gray;
   }
-}
-
-.page.about {
-  background-color: $emerald;
-  color: white;
-
-  .page-content a {
-    color: white;
-    text-decoration: underline;
+  .footer-col-wrapper {
+    display: flex;
+    justify-content: space-between;
+    &:after {
+      content: none;
+    }
   }
-  .u-email, .p-name {
-    color: white;
-  }
-}
 
-.site-title{
-  font-size: 2rem;
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-  .page.about &{
-    text-decoration: none;
-  }
-}
-
-.site-title, .site-title:visited, .site-header:visited, .site-nav .page-link {
-  &:hover, & {
-    color: white;
-    mix-blend-mode: difference;
-
-    .page.about & {
-      color: white;
-      mix-blend-mode: normal;
+  .go-top {
+    font-size: 2rem;
+    a {
+      color: $text-gray;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }
-
 
 @media screen and (max-width: 600px) {
   .site-nav {
@@ -242,6 +281,16 @@ body.post {
     position: absolute;
     top: 9px;
   }
+
+  .site-nav .menu-icon {
+    color: white;
+    font-size: 2rem;
+    mix-blend-mode: difference;
+  }
+
+  .footer-col {
+    width: auto;
+  }
 }
 
 
@@ -290,6 +339,13 @@ body.post {
         margin-left: calc(100vw * -0.25);
         margin-right: calc(100vw * -0.25);
       }
+    }
+  }
+
+  body.page {
+    .post-content {
+      padding-left: calc(100vw * 0.2);
+      padding-right: calc(100vw * 0.2);
     }
   }
 }
