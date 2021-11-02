@@ -177,7 +177,7 @@ body.post {
   }
 }
 
-.site-title, .site-header:visited, .site-nav .page-link {
+.site-title, .site-title:visited, .site-header:visited, .site-nav .page-link {
   &:hover, & {
     color: white;
     mix-blend-mode: difference;
