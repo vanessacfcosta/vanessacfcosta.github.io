@@ -287,13 +287,17 @@ body.post {
       }
       transition: top .5s ease-in;
     }
+    input:checked ~ .menu-icon {
+      position: fixed;
+      right: 1rem;
+    }
     input:checked ~ .trigger {
-      position: absolute;
+      position: fixed;
       padding-top: 7rem;
-      top: -24px;
-      right: -15px;
+      top: 0px;
+      right: 0px;
       width: calc(100vw);
-      height: calc(100vh - 7rem);
+      height: calc(100vh);
       background-color: black;
       z-index: 1;
       display: flex;
