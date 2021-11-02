@@ -2,7 +2,7 @@
 layout: post
 title:  "Pusfuk"
 description: >
-  REvista revista revista
+  Revista revista revista
 thumbnail: assets/images/rockart/9.gif
 cover: https://user-images.githubusercontent.com/93037772/139945453-ac98b4c5-8c5c-4201-a294-27ec4b2cd4e4.png
 categories:
