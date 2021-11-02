@@ -189,6 +189,13 @@ body.post {
       width: 100vw;
       margin-left: calc(100vw * -0.15);
       margin-right: calc(100vw * -0.15);
+
+      &:first-child {
+        margin-top: calc(100vw * 0.05);
+      }
+      &:last-child {
+        margin-bottom: calc(100vw * 0.05);
+      }
       &:not(:first-child) {
         margin-top: calc(100vw * 0.0125);
       }
@@ -362,9 +369,12 @@ body.post {
   }
 
   body.page {
-    .post-content {
-      padding-left: calc(100vw * 0.2);
-      padding-right: calc(100vw * 0.2);
+    .page-content {
+      .wrapper {
+        width: 50%;
+        padding-left: calc(100vw * 0.2);
+        padding-right: calc(100vw * 0.2);
+      }
 
       p img {
         margin-left: calc(100vw * -0.25);
