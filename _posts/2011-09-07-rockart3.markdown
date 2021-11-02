@@ -1,25 +1,18 @@
 ---
 layout: post
-title:  "Rock'art"
+title:  "Workademy"
 description: "Lorem ipsum"
-thumbnail: assets/images/rockart/4.jpg
-cover: assets/images/rockart/thumbnail.png
+thumbnail: https://user-images.githubusercontent.com/93037772/139944500-8f2766f3-4690-4284-97ad-a703191f01da.png
+cover: https://user-images.githubusercontent.com/93037772/139944500-8f2766f3-4690-4284-97ad-a703191f01da.png
 categories:
   - Illustration
   - Graphic Design
   - Branding
 ---
-![1]({{ 'assets/images/rockart/1.jpg' | relative_url }})
-![2]({{ 'assets/images/rockart/2.jpg' | relative_url }})
-![3]({{ 'assets/images/rockart/3.jpg' | relative_url }})
-![4]({{ 'assets/images/rockart/4.jpg' | relative_url }})
-![5]({{ 'assets/images/rockart/5.jpg' | relative_url }})
-![6]({{ 'assets/images/rockart/6.jpg' | relative_url }})
-![7]({{ 'assets/images/rockart/7.jpg' | relative_url }})
-![8]({{ 'assets/images/rockart/8.jpg' | relative_url }})
-![9]({{ 'assets/images/rockart/9.gif' | relative_url }})
-![10]({{ 'assets/images/rockart/10.jpg' | relative_url }})
-![11]({{ 'assets/images/rockart/11.gif' | relative_url }})
-![12]({{ 'assets/images/rockart/12.jpg' | relative_url }})
-![13]({{ 'assets/images/rockart/13.jpg' | relative_url }})
+
+![4_WORKADEMY](https://user-images.githubusercontent.com/93037772/139944548-fc3c2d6d-6d28-4c8d-9745-4f3625b33dd7.png)
+
+gfhgfhgfhfg
+
+![13_WORKADEMY](https://user-images.githubusercontent.com/93037772/139944500-8f2766f3-4690-4284-97ad-a703191f01da.png)
 
