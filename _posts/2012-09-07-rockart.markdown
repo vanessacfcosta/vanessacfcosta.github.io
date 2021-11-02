@@ -3,14 +3,13 @@ layout: post
 title:  "Rock'art"
 description: >
   The Rock'art festival is a musical and cultural event that takes place in Anadia - Portugal. I was invited to create the 2012 Edition image.
-thumbnail: assets/images/rockart/4.jpg
-cover: assets/images/rockart/thumbnail.png
+thumbnail: assets/images/rockart/9.gif
+cover: assets/images/rockart/cover.png
 categories:
   - Illustration
   - Graphic Design
   - Branding
 ---
-![1]({{ 'assets/images/rockart/1.jpg' | relative_url }})
 ![2]({{ 'assets/images/rockart/2.jpg' | relative_url }})
 ![3]({{ 'assets/images/rockart/3.jpg' | relative_url }})
 ![4]({{ 'assets/images/rockart/4.jpg' | relative_url }})
