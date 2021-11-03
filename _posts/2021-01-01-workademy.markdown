@@ -30,7 +30,9 @@ Escrever texto aqui
 ![1]({{ 'assets/images/workademy/14_WORKADEMY.png' | relative_url }})
 ![1]({{ 'assets/images/workademy/15_WORKADEMY.png' | relative_url }})
 
-<video src="{{'assets/images/workademy/LOGOTIPO_WORKADEMY_AE.mp4' | relative_url }}"></video>
+<video autoplay muted loop>
+  <source src="{{'assets/images/workademy/LOGOTIPO_WORKADEMY_AE.mp4' | relative_url }}" />
+</video>
 
 
 
