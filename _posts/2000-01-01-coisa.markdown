@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Coisas"
+description: >
+  The Rock'art festival is a musical and cultural event that takes place in Anadia - Portugal. I was invited to create the 2012 Edition image.
+thumbnail: assets/images/rockart/9.gif
+cover: assets/images/rockart/cover.png
+categories:
+  - Illustration
+  - Graphic Design
+  - Branding
+---
+![2]({{ 'assets/images/rockart/2.jpg' | relative_url }})
+![3]({{ 'assets/images/rockart/3.jpg' | relative_url }})
+![4]({{ 'assets/images/rockart/4.jpg' | relative_url }})
+![5]({{ 'assets/images/rockart/5.jpg' | relative_url }})
+
+The Rock'art festival is a musical and cultural event that takes place in Anadia - Portugal. I was invited to create the 2012 Edition image.
+
+![6]({{ 'assets/images/rockart/6.jpg' | relative_url }})
+![7]({{ 'assets/images/rockart/7.jpg' | relative_url }})
+![8]({{ 'assets/images/rockart/8.jpg' | relative_url }})
+![9]({{ 'assets/images/rockart/9.gif' | relative_url }})
+![10]({{ 'assets/images/rockart/10.jpg' | relative_url }})
+![11]({{ 'assets/images/rockart/11.gif' | relative_url }})
+![12]({{ 'assets/images/rockart/12.jpg' | relative_url }})
+![13]({{ 'assets/images/rockart/13.jpg' | relative_url }})
+

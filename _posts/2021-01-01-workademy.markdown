@@ -13,7 +13,9 @@ categories:
 
 ![1]({{ 'assets/images/workademy/1_WORKADEMY.png' | relative_url }})
 ![1]({{ 'assets/images/workademy/2_WORKADEMY.png' | relative_url }})
-![1]({{ 'assets/images/workademy/3_WORKADEMY.png' | relative_url }})
+<video autoplay muted loop playsinline>
+  <source src="{{'assets/images/workademy/LOGOTIPO_WORKADEMY_AE.mp4' | relative_url }}" />
+</video>
 ![1]({{ 'assets/images/workademy/4_WORKADEMY.png' | relative_url }})
 ![1]({{ 'assets/images/workademy/5_WORKADEMY.png' | relative_url }})
 ![1]({{ 'assets/images/workademy/6_WORKADEMY.png' | relative_url }})
@@ -30,9 +32,7 @@ Escrever texto aqui
 ![1]({{ 'assets/images/workademy/14_WORKADEMY.png' | relative_url }})
 ![1]({{ 'assets/images/workademy/15_WORKADEMY.png' | relative_url }})
 
-<video autoplay muted loop playsinline>
-  <source src="{{'assets/images/workademy/LOGOTIPO_WORKADEMY_AE.mp4' | relative_url }}" />
-</video>
+
 
 
 
